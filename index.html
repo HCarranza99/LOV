@@ -3,29 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>La Oveja Negra | Roasters & Spirits</title>
+    <title>Fogo Bonito | Brazilian Steakhouse · San Salvador</title>
     <meta
       name="description"
-      content="La Oveja Negra: café de especialidad, cocina de autor y spirits en una experiencia íntima, oscura y cuidadosamente curada."
+      content="Fogo Bonito — Brazilian Steakhouse en San Salvador. Pasión por la parrilla: cortes premium de carne 100% importada, churrasco al fuego y experiencia brasileña. Vive la experiencia."
     />
+    <meta name="theme-color" content="#0c0a09" />
+    <meta property="og:title" content="Fogo Bonito · Brazilian Steakhouse" />
+    <meta property="og:description" content="Pasión por la parrilla. Cortes premium al fuego en San Salvador. Vive la experiencia." />
+    <meta property="og:type" content="website" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;0,900;1,600;1,700&family=Inter:wght@400;500;600;700;800&family=Caveat:wght@600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" type="image/jpeg" href="assets/la-oveja-negra-mark.jpg" />
+    <link rel="icon" type="image/svg+xml" href="assets/fogo-bonito-mark.svg" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="grain" aria-hidden="true"></div>
+    <canvas class="embers" data-embers aria-hidden="true"></canvas>
 
     <header class="site-header" data-header>
-      <a class="brand" href="#inicio" aria-label="La Oveja Negra inicio">
+      <a class="brand" href="#inicio" aria-label="Fogo Bonito inicio">
         <span class="brand-mark">
-          <img src="assets/la-oveja-negra-mark.jpg" alt="" />
+          <img src="assets/fogo-bonito-mark.svg" alt="" />
         </span>
-        <span class="brand-text">La Oveja Negra</span>
+        <span class="brand-text">
+          <span class="brand-name">Fogo Bonito</span>
+          <span class="brand-tag">Brazilian Steakhouse</span>
+        </span>
       </a>
 
       <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" data-menu-toggle>
@@ -35,447 +43,423 @@
 
       <nav class="nav-panel" data-nav>
         <a href="#experiencia">Experiencia</a>
+        <a href="#cortes">Cortes</a>
         <a href="#menu">Menú</a>
-        <a href="#eventos">Eventos</a>
-        <a href="#cafe">Café</a>
-        <a href="#ubicacion">Ubicación</a>
+        <a href="#ambiente">Ambiente</a>
+        <a href="#visitanos">Visítanos</a>
       </nav>
 
-      <a
-        class="header-cta"
-        href="https://www.opentable.com/booking/restref/availability?lang=en-US&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnx0qIKJ78jEXO8I7vvg9S433nnbsa9eFJOg1Xmo_-4jKQjL828Cz3vdrb-Z4_aem_bSRbd49Vj6pQCYfoU3K3hg&utm_id=97760_v0_s00_e0_tv3_a1dennh9cbgkje&correlationId=b969146c-99cd-441b-8f94-44315b84f63f&restRef=1423267&otSource=Instagram&otCampaign=Instagram"
-        target="_blank"
-        rel="noreferrer"
-      >
+      <a class="header-cta" href="https://ig.me/m/fogobonito.sv" target="_blank" rel="noreferrer">
         Reservar
       </a>
     </header>
 
     <main id="inicio">
-      <section class="hero" aria-label="La Oveja Negra">
+      <section class="hero" aria-label="Fogo Bonito">
         <div class="hero-media">
           <img
-            src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1800&q=85"
-            alt="Bar oscuro con luz calida y ambiente intimo"
+            src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?auto=format&fit=crop&w=1900&q=85"
+            alt="Corte de carne sellado y rebanado sobre tabla, ambiente oscuro y cinematográfico"
           />
         </div>
         <div class="hero-shade"></div>
+        <div class="hero-glow" aria-hidden="true"></div>
 
         <div class="hero-frame">
-          <div class="hero-copy reveal">
-            <p class="eyebrow">Roasters & Spirits</p>
-            <h1>La oveja negra de la escena gastronómica.</h1>
-            <p class="hero-text">
-              Café de especialidad, cocina de autor y spirits en una experiencia íntima, oscura y cuidadosamente curada.
+          <div class="hero-copy">
+            <p class="eyebrow reveal"><span class="flag-dot" aria-hidden="true"></span>Brazilian Steakhouse · San Salvador</p>
+            <h1 class="reveal">
+              Pasión por la
+              <span class="rotator" data-rotator aria-label="parrilla">
+                <span class="rotator-word is-active">parrilla</span>
+                <span class="rotator-word">brasa</span>
+                <span class="rotator-word">fogo</span>
+                <span class="rotator-word">churrasco</span>
+              </span>
+            </h1>
+            <p class="hero-text reveal">
+              Cortes premium de carne 100% importada, sellados al fuego con alma brasileña. No es solo carne: es una experiencia.
             </p>
-            <div class="hero-actions">
-              <a
-                class="btn btn-primary"
-                href="https://www.opentable.com/booking/restref/availability?lang=en-US&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnx0qIKJ78jEXO8I7vvg9S433nnbsa9eFJOg1Xmo_-4jKQjL828Cz3vdrb-Z4_aem_bSRbd49Vj6pQCYfoU3K3hg&utm_id=97760_v0_s00_e0_tv3_a1dennh9cbgkje&correlationId=b969146c-99cd-441b-8f94-44315b84f63f&restRef=1423267&otSource=Instagram&otCampaign=Instagram"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Reservar mesa
-              </a>
-              <a class="btn btn-secondary" href="#menu">Ver menú</a>
+            <div class="hero-actions reveal">
+              <a class="btn btn-primary" href="#cortes">Ver los cortes</a>
+              <a class="btn btn-secondary" href="https://fogobonito.com/MenuDigital" target="_blank" rel="noreferrer">Menú digital</a>
             </div>
           </div>
 
-          <aside class="hero-note reveal" aria-label="Detalles de la experiencia">
-            <span class="hero-note-label">San Salvador</span>
-            <span class="hero-note-title">Bulevar Del Hipódromo 209</span>
-            <span class="hero-note-meta">Café · Brunch · Cocktails · Experiencias</span>
-            <a
-              href="https://www.google.com/maps/search/?api=1&query=La%20Oveja%20Negra%20Bulevar%20Del%20Hipodromo%20209%20San%20Salvador"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Ver ubicación
+          <aside class="hero-note reveal" aria-label="Detalles del restaurante">
+            <span class="hero-note-label">San Benito</span>
+            <span class="hero-note-title">139 Pje. 10, San Salvador</span>
+            <span class="hero-note-meta">Churrasco · Cortes · Ceviches · Parrilla al fogo</span>
+            <a href="https://www.google.com/maps/search/?api=1&query=Fogo%20Bonito%20139%20Pasaje%2010%20Colonia%20San%20Benito%20San%20Salvador" target="_blank" rel="noreferrer">
+              Cómo llegar
             </a>
           </aside>
         </div>
+
+        <div class="hero-scroll" aria-hidden="true">
+          <span>Descubrí</span>
+          <span class="hero-scroll-line"></span>
+        </div>
       </section>
+
+      <!-- Marquee ticker -->
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker-track" data-ticker>
+          <span>Fogo Bonito</span><i class="ticker-flame"></i>
+          <span>Churrasco</span><i class="ticker-flame"></i>
+          <span>Tomahawk</span><i class="ticker-flame"></i>
+          <span>Picanha</span><i class="ticker-flame"></i>
+          <span>Carne 100% importada</span><i class="ticker-flame"></i>
+          <span>Ribeye</span><i class="ticker-flame"></i>
+          <span>Vive la experiencia</span><i class="ticker-flame"></i>
+        </div>
+        <div class="ticker-track" data-ticker>
+          <span>Fogo Bonito</span><i class="ticker-flame"></i>
+          <span>Churrasco</span><i class="ticker-flame"></i>
+          <span>Tomahawk</span><i class="ticker-flame"></i>
+          <span>Picanha</span><i class="ticker-flame"></i>
+          <span>Carne 100% importada</span><i class="ticker-flame"></i>
+          <span>Ribeye</span><i class="ticker-flame"></i>
+          <span>Vive la experiencia</span><i class="ticker-flame"></i>
+        </div>
+      </div>
 
       <section class="manifesto section-pad" id="experiencia">
-        <div class="manifesto-number reveal">01</div>
-        <div class="manifesto-copy reveal">
-          <p class="eyebrow">Una casa con caracter</p>
-          <h2>No somos una cafetería común.</h2>
-          <p>
-            Somos un espacio para quienes buscan café con carácter, cocina con intención y bebidas diseñadas para
-            disfrutarse sin prisa.
+        <div class="manifesto-copy">
+          <p class="eyebrow reveal"><span class="flag-dot" aria-hidden="true"></span>Do fogo à mesa</p>
+          <h2 class="reveal">No es solo carne.<br />Es <em>fuego</em>, técnica y pasión.</h2>
+          <p class="reveal">
+            En Fogo Bonito la parrilla es un ritual. Seleccionamos cortes premium, los dominamos con brasa viva y los
+            servimos con la calidez de la cocina brasileña. Cada plato es una invitación a quedarte.
           </p>
+          <a class="link-underline reveal" href="#cortes">Conocé nuestros cortes</a>
         </div>
-        <figure class="manifesto-image reveal">
-          <img
-            src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=85"
-            alt="Café servido con luz cálida"
-          />
-          <figcaption>Coffee rituals after dark</figcaption>
-        </figure>
+
+        <div class="stats reveal" data-stats>
+          <div class="stat">
+            <span class="stat-num"><span data-count="100">0</span><em>%</em></span>
+            <span class="stat-label">Carne importada</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num"><span data-count="5">0</span></span>
+            <span class="stat-label">Cortes premium</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num"><span data-count="34">0</span><em>K</em></span>
+            <span class="stat-label">En comunidad</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num"><span data-count="4">0</span></span>
+            <span class="stat-label">Guarniciones por corte</span>
+          </div>
+        </div>
       </section>
 
-      <section class="pillars" aria-label="Tres pilares">
-        <div class="pillars-sticky">
-          <div class="pillar-visuals reveal">
-            <p class="eyebrow">Coffee · Kitchen · Spirits</p>
-            <div class="pillar-stage" aria-label="Rituales de La Oveja Negra" data-pillar-mosaic>
-              <article class="pillar-panel is-active" data-pillar-panel tabindex="0">
-                <img
-                  src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=1200&q=85"
-                  alt="Barista preparando café"
-                />
-                <div>
-                  <span>01</span>
-                  <h3>Coffee</h3>
-                  <p>Café de especialidad, métodos, tueste, catas y rituales para quienes toman el café en serio.</p>
-                </div>
-              </article>
+      <!-- Signature cuts auto-rotator -->
+      <section class="cuts" id="cortes">
+        <div class="cuts-head">
+          <p class="eyebrow reveal"><span class="flag-dot" aria-hidden="true"></span>Cortes al fogo</p>
+          <h2 class="reveal">Del fuego, directo a tu mesa.</h2>
+          <p class="reveal">Cinco cortes insignia. Se sirven con cuatro guarniciones a elección. Elegí el tuyo.</p>
+        </div>
 
-              <article class="pillar-panel" data-pillar-panel tabindex="0">
-                <img
-                  src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=1200&q=85"
-                  alt="Plato de autor sobre mesa oscura"
-                />
-                <div>
-                  <span>02</span>
-                  <h3>Kitchen</h3>
-                  <p>Brunch, platos de temporada y cocina de autor con una presentación visualmente cuidada.</p>
-                </div>
-              </article>
-
-              <article class="pillar-panel" data-pillar-panel tabindex="0">
-                <img
-                  src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=1200&q=85"
-                  alt="Coctel oscuro con hielo y cítricos"
-                />
-                <div>
-                  <span>03</span>
-                  <h3>Spirits</h3>
-                  <p>Cocteles, mocktails y noches especiales en una atmósfera íntima y distinta.</p>
-                </div>
-              </article>
+        <div class="cuts-viewer reveal" data-cuts>
+          <div class="cuts-images">
+            <div class="cuts-img is-active">
+              <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=85" alt="Corte grande a la parrilla sobre tabla, para compartir" />
+            </div>
+            <div class="cuts-img">
+              <img src="https://images.unsplash.com/photo-1615937691194-97dbd3f3dc29?auto=format&fit=crop&w=1200&q=85" alt="Medallones de lomo fino premium" />
+            </div>
+            <div class="cuts-img">
+              <img src="https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=1200&q=85" alt="Ribeye rebanado a la parrilla" />
+            </div>
+            <div class="cuts-img">
+              <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=1200&q=85" alt="Fraldinha con guarnición" />
+            </div>
+            <div class="cuts-img">
+              <img src="https://images.unsplash.com/photo-1594041680534-e8c8cdebd659?auto=format&fit=crop&w=1200&q=85" alt="Picanha a la brasa con papas" />
             </div>
           </div>
 
-          <div class="pillar-fixed-copy reveal">
-            <h2>Tres rituales, una misma oscuridad elegante.</h2>
+          <div class="cuts-panel">
+            <div class="cuts-count"><span data-cut-current>01</span><em>/ 05</em></div>
+            <h3 class="cuts-name" data-cut-name>Tomahawk</h3>
+            <div class="cuts-price" data-cut-price>$65</div>
+            <p class="cuts-desc" data-cut-desc>Nuestro corte insignia. Un ribeye con hueso largo, sellado al fuego, ideal para compartir y para presumir.</p>
+            <div class="cuts-meta" data-cut-meta>Especial de la casa · para compartir</div>
+
+            <ol class="cuts-nav">
+              <li>
+                <button
+                  class="cut-tab is-active"
+                  type="button"
+                  data-cut-tab="0"
+                  data-name="Tomahawk"
+                  data-price="$65"
+                  data-desc="Nuestro corte insignia. Un ribeye con hueso largo, sellado al fuego, ideal para compartir y para presumir."
+                  data-meta="Especial de la casa · para compartir"
+                >
+                  <span class="cut-tab-name">Tomahawk</span>
+                  <span class="cut-tab-price">$65</span>
+                  <span class="cut-tab-bar"></span>
+                </button>
+              </li>
+              <li>
+                <button
+                  class="cut-tab"
+                  type="button"
+                  data-cut-tab="1"
+                  data-name="Lomo Fino"
+                  data-price="$44"
+                  data-desc="Tenderloin premium, el corte más suave y magro. Textura de mantequilla, sellado en su punto exacto."
+                  data-meta="El más suave · magro y tierno"
+                >
+                  <span class="cut-tab-name">Lomo Fino</span>
+                  <span class="cut-tab-price">$44</span>
+                  <span class="cut-tab-bar"></span>
+                </button>
+              </li>
+              <li>
+                <button
+                  class="cut-tab"
+                  type="button"
+                  data-cut-tab="2"
+                  data-name="Ribeye"
+                  data-price="$35"
+                  data-desc="Marmoleo generoso y sabor intenso. El favorito de los amantes de la carne, jugoso hasta el último bocado."
+                  data-meta="Marmoleo intenso · el favorito"
+                >
+                  <span class="cut-tab-name">Ribeye</span>
+                  <span class="cut-tab-price">$35</span>
+                  <span class="cut-tab-bar"></span>
+                </button>
+              </li>
+              <li>
+                <button
+                  class="cut-tab"
+                  type="button"
+                  data-cut-tab="3"
+                  data-name="Fraldinha"
+                  data-price="$35"
+                  data-desc="El corte brasileño por excelencia. Fibras largas, sabor profundo y ese punto de brasa que enamora."
+                  data-meta="Clásico brasileño · lleno de sabor"
+                >
+                  <span class="cut-tab-name">Fraldinha</span>
+                  <span class="cut-tab-price">$35</span>
+                  <span class="cut-tab-bar"></span>
+                </button>
+              </li>
+              <li>
+                <button
+                  class="cut-tab"
+                  type="button"
+                  data-cut-tab="4"
+                  data-name="NewYork"
+                  data-price="$33"
+                  data-desc="Firme, con carácter y un borde de grasa que se carameliza al fuego. Equilibrio perfecto entre sabor y textura."
+                  data-meta="Con carácter · borde caramelizado"
+                >
+                  <span class="cut-tab-name">NewYork</span>
+                  <span class="cut-tab-price">$33</span>
+                  <span class="cut-tab-bar"></span>
+                </button>
+              </li>
+            </ol>
+
+            <span class="cuts-badge" aria-hidden="true">Carne 100% importada</span>
           </div>
         </div>
       </section>
 
-      <section class="menu-editorial section-pad" id="menu">
-        <div class="menu-heading reveal">
-          <p class="eyebrow">Seasonal menu</p>
-          <h2>Una carta diseñada para volver.</h2>
-          <p>Cada selección nace de una combinación entre técnica, producto y atmósfera.</p>
-          <a class="btn btn-secondary" href="#reservas">Ver menú completo</a>
+      <!-- Interactive menu -->
+      <section class="menu section-pad" id="menu">
+        <div class="menu-head">
+          <div>
+            <p class="eyebrow reveal"><span class="flag-dot" aria-hidden="true"></span>Carta Fogo Bonito</p>
+            <h2 class="reveal">Una carta para volver.</h2>
+          </div>
+          <a class="btn btn-secondary reveal" href="https://fogobonito.com/MenuDigital" target="_blank" rel="noreferrer">Menú digital completo</a>
         </div>
 
-        <div class="menu-mosaic" aria-label="Categorias del menu">
-          <a class="menu-tile tall reveal" href="#reservas">
-            <img
-              src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=85"
-              alt="Taza de cafe sobre mesa oscura"
-            />
-            <span>Café</span>
-          </a>
-          <a class="menu-tile reveal" href="#reservas">
-            <img
-              src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=85"
-              alt="Brunch servido en mesa"
-            />
-            <span>Brunch</span>
-          </a>
-          <a class="menu-tile reveal" href="#reservas">
-            <img
-              src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=800&q=85"
-              alt="Plato gastronomico con presentacion cuidada"
-            />
-            <span>Platos</span>
-          </a>
-          <a class="menu-tile wide reveal" href="#reservas">
-            <img
-              src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=1000&q=85"
-              alt="Coctel con luz lateral"
-            />
-            <span>Cocktails</span>
-          </a>
-          <a class="menu-tile reveal" href="#reservas">
-            <img
-              src="https://images.unsplash.com/photo-1546173159-315724a31696?auto=format&fit=crop&w=800&q=85"
-              alt="Bebida fria en vaso alto"
-            />
-            <span>Mocktails</span>
-          </a>
-          <a class="menu-tile reveal" href="#reservas">
-            <img
-              src="https://images.unsplash.com/photo-1604909052743-94e838986d24?auto=format&fit=crop&w=800&q=85"
-              alt="Ingredientes de temporada en cocina"
-            />
-            <span>Temporada</span>
-          </a>
+        <div class="menu-tabs reveal" role="tablist" aria-label="Categorías del menú" data-menu-tabs>
+          <button class="menu-tab is-active" role="tab" aria-selected="true" data-menu-tab="entradas">Entradas</button>
+          <button class="menu-tab" role="tab" aria-selected="false" data-menu-tab="cortes">Cortes &amp; especiales</button>
+          <button class="menu-tab" role="tab" aria-selected="false" data-menu-tab="mar">Ceviches &amp; cocteles</button>
+          <button class="menu-tab" role="tab" aria-selected="false" data-menu-tab="cremas">Cremas &amp; bebidas</button>
         </div>
+
+        <div class="menu-panels reveal">
+          <div class="menu-panel is-active" data-menu-panel="entradas">
+            <ul class="menu-list">
+              <li><span class="mi-name">Feijoada</span><span class="mi-dot"></span><span class="mi-price">$8</span><span class="mi-desc">Frijoles en guiso especial cocinados al estilo brasileño.</span></li>
+              <li><span class="mi-name">Papas Cambray</span><span class="mi-dot"></span><span class="mi-price">$6</span><span class="mi-desc">Salteadas en mantequilla con hierbas finas y ajo.</span></li>
+              <li><span class="mi-name">Bolinhos de Mandioca</span><span class="mi-dot"></span><span class="mi-price">$12</span><span class="mi-desc">Yuca empanizada rellena de provolone, salsa chipotle y alioli.</span></li>
+              <li><span class="mi-name">Champiñones al Ajo</span><span class="mi-dot"></span><span class="mi-price">$12</span><span class="mi-desc">Hongos salteados al ajo y finas hierbas, con pan baguette.</span></li>
+              <li><span class="mi-name">Graveto de Queijo</span><span class="mi-dot"></span><span class="mi-price">$14</span><span class="mi-desc">Bastones de queso premium en nuestro batter de cerveza importada.</span></li>
+              <li><span class="mi-name">Espárragos al Fogo</span><span class="mi-dot"></span><span class="mi-price">$14</span><span class="mi-desc">Al grill, albardados en jamón serrano y queso crema especiado.</span></li>
+              <li><span class="mi-name">Camaroncillos Empanizados</span><span class="mi-dot"></span><span class="mi-price">$14</span><span class="mi-desc">Camarones sazonados con papas cambray y salsa ranch.</span></li>
+              <li><span class="mi-name">Festa do Mar</span><span class="mi-dot"></span><span class="mi-price">$16</span><span class="mi-desc">Mariscos al vino blanco y quesos gratinados en molcajete caliente.</span></li>
+            </ul>
+          </div>
+
+          <div class="menu-panel" data-menu-panel="cortes">
+            <ul class="menu-list">
+              <li><span class="mi-name">NewYork</span><span class="mi-dot"></span><span class="mi-price">$33</span><span class="mi-desc">Firme, con carácter y borde caramelizado. Con 4 guarniciones.</span></li>
+              <li><span class="mi-name">Picanha</span><span class="mi-dot"></span><span class="mi-price">$33</span><span class="mi-desc">El corte brasileño por excelencia. Con 4 guarniciones.</span></li>
+              <li><span class="mi-name">Fraldinha</span><span class="mi-dot"></span><span class="mi-price">$35</span><span class="mi-desc">Fibras largas y sabor profundo al fuego. Con 4 guarniciones.</span></li>
+              <li><span class="mi-name">Ribeye</span><span class="mi-dot"></span><span class="mi-price">$35</span><span class="mi-desc">Marmoleo generoso, jugoso e intenso. Con 4 guarniciones.</span></li>
+              <li><span class="mi-name">Lomo Fino</span><span class="mi-dot"></span><span class="mi-price">$44</span><span class="mi-desc">El corte más suave y magro. Con 4 guarniciones.</span></li>
+              <li class="mi-star"><span class="mi-name">Tomahawk</span><span class="mi-dot"></span><span class="mi-price">$65</span><span class="mi-desc">El especial de la casa: ribeye con hueso largo para compartir.</span></li>
+              <li><span class="mi-name">Enrolado al Fogo</span><span class="mi-dot"></span><span class="mi-price">$30</span><span class="mi-desc">Delicioso lomito de res enrollado, sellado al fuego.</span></li>
+              <li><span class="mi-name">Molcajete</span><span class="mi-dot"></span><span class="mi-price">$23</span><span class="mi-desc">Lomito, camarones y vegetales al grill con queso asado.</span></li>
+            </ul>
+          </div>
+
+          <div class="menu-panel" data-menu-panel="mar">
+            <ul class="menu-list">
+              <li><span class="mi-name">Ceviche de Pescado o Camarón</span><span class="mi-dot"></span><span class="mi-price">$14</span><span class="mi-desc">Salsa natural, agua chile o veracruzana, a elección.</span></li>
+              <li><span class="mi-name">Coctel de Camarón</span><span class="mi-dot"></span><span class="mi-price">$14</span><span class="mi-desc">Salsa rosada, coco piña o maracuyá.</span></li>
+              <li><span class="mi-name">Coctel de Pescado</span><span class="mi-dot"></span><span class="mi-price">$14</span><span class="mi-desc">Fresco, a elección de salsa.</span></li>
+              <li><span class="mi-name">Ceviche Mixto</span><span class="mi-dot"></span><span class="mi-price">$18</span><span class="mi-desc">Combinación de mariscos frescos del día.</span></li>
+              <li><span class="mi-name">Coctel Mixto</span><span class="mi-dot"></span><span class="mi-price">$18</span><span class="mi-desc">Camarón y pescado en salsa a elección.</span></li>
+              <li class="mi-star"><span class="mi-name">Ceviche de Pulpo</span><span class="mi-dot"></span><span class="mi-price">$22</span><span class="mi-desc">Tierno pulpo baby, el favorito del mar.</span></li>
+              <li><span class="mi-name">Baby Pulpo</span><span class="mi-dot"></span><span class="mi-price">$16</span><span class="mi-desc">Salteado en mojo de ajo o empanizado.</span></li>
+            </ul>
+          </div>
+
+          <div class="menu-panel" data-menu-panel="cremas">
+            <ul class="menu-list">
+              <li><span class="mi-name">Crema de Champiñones</span><span class="mi-dot"></span><span class="mi-price">$7</span><span class="mi-desc">Cremosa y con hierbas finas.</span></li>
+              <li><span class="mi-name">Crema de Espárragos</span><span class="mi-dot"></span><span class="mi-price">$8</span><span class="mi-desc">Suave y aromática.</span></li>
+              <li><span class="mi-name">Crema de Camarón</span><span class="mi-dot"></span><span class="mi-price">$9</span><span class="mi-desc">Con camarones frescos.</span></li>
+              <li><span class="mi-name">Limonada de las Amazonas</span><span class="mi-dot"></span><span class="mi-price">$5</span><span class="mi-desc">Limón natural, agua de coco, crema de coco y leche condensada.</span></li>
+              <li><span class="mi-name">Frappe</span><span class="mi-dot"></span><span class="mi-price">$5</span><span class="mi-desc">Frío, cremoso y refrescante.</span></li>
+              <li><span class="mi-name">Cimarrona</span><span class="mi-dot"></span><span class="mi-price">$4</span><span class="mi-desc">Original, tamarindo o maracuyá.</span></li>
+              <li><span class="mi-name">Cervezas</span><span class="mi-dot"></span><span class="mi-price">$3+</span><span class="mi-desc">Nacionales, internacionales y micheladas.</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="menu-foot reveal">Formas de pago: efectivo, tarjeta de crédito o débito y transferencias · Propina 10% adicional.</p>
       </section>
 
-      <section class="experiences section-pad" id="eventos">
-        <div class="experience-main reveal">
-          <p class="eyebrow">Reservas abiertas</p>
-          <h2>Experiencias que no se repiten todos los días.</h2>
-          <p>
-            Eventos, talleres y propuestas de temporada creadas para descubrir nuevos sabores y volver por algo distinto.
+      <!-- Ambiente / experience -->
+      <section class="ambiente section-pad" id="ambiente">
+        <div class="ambiente-head">
+          <p class="eyebrow reveal"><span class="flag-dot" aria-hidden="true"></span>El ambiente</p>
+          <h2 class="reveal">Un pedacito de Brasil en San Salvador.</h2>
+          <p class="reveal">
+            Maderas cálidas, brasa encendida y buena mesa. El lugar donde el churrasco se vive en compañía —
+            y donde también se vibra el fútbol.
           </p>
-          <a class="btn btn-primary" href="#reservas">Ver próximos eventos</a>
         </div>
 
-        <div class="event-list reveal">
-          <a href="#reservas">
-            <span>Catas de café</span>
-            <small>Origen, tueste y método</small>
-          </a>
-          <a href="#reservas">
-            <span>Brunch especiales</span>
-            <small>Ediciones de fin de semana</small>
-          </a>
-          <a href="#reservas">
-            <span>Matcha Experience</span>
-            <small>Oliva, crema y notas vegetales</small>
-          </a>
-          <a href="#reservas">
-            <span>Noches de spirits</span>
-            <small>Cocteleria de barra intima</small>
-          </a>
-          <a href="#reservas">
-            <span>Seasonal editions</span>
-            <small>Menu por tiempo limitado</small>
-          </a>
+        <div class="ambiente-grid">
+          <figure class="am-tile am-tall reveal">
+            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1000&q=85" alt="Tabla de churrasco variado con guarniciones" />
+            <figcaption>Churrasco para compartir</figcaption>
+          </figure>
+          <figure class="am-tile reveal">
+            <img src="https://images.unsplash.com/photo-1603360946369-dc9bb6258143?auto=format&fit=crop&w=800&q=85" alt="Espetos a la brasa con papas" />
+            <figcaption>Espetos al fuego</figcaption>
+          </figure>
+          <figure class="am-tile reveal">
+            <img src="https://images.unsplash.com/photo-1546964124-0cce460f38ef?auto=format&fit=crop&w=800&q=85" alt="Corte a la parrilla con vegetales en plato caliente" />
+            <figcaption>Servido en su punto</figcaption>
+          </figure>
+          <figure class="am-tile am-wide reveal">
+            <img src="https://images.unsplash.com/photo-1428515613728-6b4607e44363?auto=format&fit=crop&w=1100&q=85" alt="Cocina del restaurante en plena acción" />
+            <figcaption>Cocina viva, cada servicio</figcaption>
+          </figure>
         </div>
-      </section>
 
-      <section class="roastery section-pad" id="cafe">
-        <div class="roastery-images reveal">
-          <img
-            class="roastery-large"
-            src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1000&q=85"
-            alt="Granos de cafe tostados"
-          />
-          <img
-            class="roastery-small"
-            src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=700&q=85"
-            alt="Barista preparando cafe de especialidad"
-          />
-        </div>
-        <div class="roastery-copy reveal">
-          <p class="eyebrow">Roastery house</p>
-          <h2>Del grano a la taza, con intención.</h2>
-          <p>
-            El café no es un acompañamiento. Es parte del carácter de la casa: origen, tueste, técnica y experiencia.
-          </p>
-          <div class="roastery-points">
-            <span>Café de especialidad</span>
-            <span>Catas</span>
-            <span>Métodos</span>
-            <span>Café para llevar</span>
+        <div class="ambiente-band reveal">
+          <div class="ab-band-copy">
+            <span class="ab-band-flag" aria-hidden="true"></span>
+            <p class="ab-band-title">Vive el Mundial en Fogo Bonito</p>
+            <p class="ab-band-text">Cada partido, en pantalla grande, con la mejor parrilla y el ambiente más caliente de San Benito.</p>
           </div>
+          <a class="btn btn-primary" href="https://www.instagram.com/fogobonito.sv/" target="_blank" rel="noreferrer">Ver en Instagram</a>
         </div>
       </section>
 
-      <section class="gallery section-pad" aria-label="Galeria editorial">
-        <div class="gallery-title reveal">
-          <p class="eyebrow">Editorial moments</p>
-          <h2>Momentos de La Oveja Negra.</h2>
-        </div>
-        <div class="gallery-grid">
-          <figure class="reveal">
-            <img
-              src="https://images.unsplash.com/photo-1543352634-a1c51d9f1fa7?auto=format&fit=crop&w=900&q=85"
-              alt="Brunch de temporada"
-            />
-            <figcaption>Brunch de temporada</figcaption>
-          </figure>
-          <figure class="gallery-large reveal">
-            <img
-              src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=1200&q=85"
-              alt="Interior de bar con atmosfera nocturna"
-            />
-            <figcaption>Cocktails after dark</figcaption>
-          </figure>
-          <figure class="reveal">
-            <img
-              src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=900&q=85"
-              alt="Café en grano y taza"
-            />
-            <figcaption>Coffee rituals</figcaption>
-          </figure>
-          <figure class="gallery-wide reveal">
-            <img
-              src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=85"
-              alt="Restaurante con mesas preparadas"
-            />
-            <figcaption>Kitchen details</figcaption>
-          </figure>
-          <figure class="reveal">
-            <img
-              src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=900&q=85"
-              alt="Café servido en método manual"
-            />
-            <figcaption>Roastery sessions</figcaption>
-          </figure>
-        </div>
-      </section>
+      <!-- Visitanos -->
+      <section class="visit section-pad" id="visitanos">
+        <div class="visit-panel reveal">
+          <p class="eyebrow"><span class="flag-dot" aria-hidden="true"></span>Visítanos</p>
+          <h2>Te esperamos con la brasa encendida.</h2>
+          <p class="visit-address">139 Pje. 10, Colonia San Benito<br />San Salvador, El Salvador</p>
 
-      <section class="booking section-pad" id="reservas">
-        <div class="booking-media reveal">
-          <img
-            src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=1200&q=85"
-            alt="Coctel en mesa oscura"
-          />
-        </div>
-        <div class="booking-panel reveal">
-          <p class="eyebrow">La noche tiene mesa</p>
-          <h2>Reservá tu mesa.</h2>
-          <p>Algunos momentos merecen un lugar distinto.</p>
-          <div class="booking-actions">
-            <a
-              class="btn btn-primary"
-              href="https://www.opentable.com/booking/restref/availability?lang=en-US&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnx0qIKJ78jEXO8I7vvg9S433nnbsa9eFJOg1Xmo_-4jKQjL828Cz3vdrb-Z4_aem_bSRbd49Vj6pQCYfoU3K3hg&utm_id=97760_v0_s00_e0_tv3_a1dennh9cbgkje&correlationId=b969146c-99cd-441b-8f94-44315b84f63f&restRef=1423267&otSource=Instagram&otCampaign=Instagram"
-              target="_blank"
-              rel="noreferrer"
-            >
-              OpenTable
-            </a>
-            <a
-              class="btn btn-secondary"
-              href="https://wa.me/50369850000?text=Hola%2C%20quiero%20hacer%20una%20reserva%20en%20La%20Oveja%20Negra."
-              target="_blank"
-              rel="noreferrer"
-            >
-              WhatsApp
-            </a>
-          </div>
           <dl class="hours">
             <div>
-              <dt>Lun</dt>
-              <dd>Cerrado</dd>
+              <dt>Lun – Mié</dt>
+              <dd>11:30 a.m. – 10:00 p.m.</dd>
             </div>
             <div>
-              <dt>Mar-Jue</dt>
-              <dd>8 a.m.-11 p.m.</dd>
-            </div>
-            <div>
-              <dt>Vie</dt>
-              <dd>8 a.m.-12 a.m.</dd>
-            </div>
-            <div>
-              <dt>Sáb</dt>
-              <dd>10 a.m.-12 a.m.</dd>
-            </div>
-            <div>
-              <dt>Dom</dt>
-              <dd>10 a.m.-2 p.m.</dd>
+              <dt>Jue – Dom</dt>
+              <dd>7:00 a.m. – 10:00 p.m.</dd>
             </div>
           </dl>
-          <small>Bulevar Del Hipódromo 209 · +15 años después de 6PM</small>
-        </div>
-      </section>
-    </main>
 
-    <footer class="site-footer" id="ubicacion">
-      <div class="footer-location">
-        <div class="footer-location-copy">
-          <p class="footer-label">Dirección</p>
-          <h2>Bulevar Del Hipódromo 209, San Salvador.</h2>
-          <p>La Oveja Negra · Roasters & Spirits</p>
-          <a
-            class="footer-map-link"
-            href="https://www.google.com/maps/search/?api=1&query=La%20Oveja%20Negra%20Bulevar%20Del%20Hipodromo%20209%20San%20Salvador"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Abrir en Google Maps
-          </a>
+          <div class="visit-actions">
+            <a class="btn btn-primary" href="https://ig.me/m/fogobonito.sv" target="_blank" rel="noreferrer">Escríbenos</a>
+            <a class="btn btn-secondary" href="https://www.google.com/maps/search/?api=1&query=Fogo%20Bonito%20139%20Pasaje%2010%20Colonia%20San%20Benito%20San%20Salvador" target="_blank" rel="noreferrer">Cómo llegar</a>
+          </div>
+          <small>Carne 100% importada · Desayuno · Brunch · Almuerzo · Cena</small>
         </div>
-        <div class="footer-map">
+
+        <div class="visit-map reveal">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.439983751399!2d-89.2369243!3d13.691781299999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f633188abd978d3%3A0xdd4cf30159d5f2df!2sLa%20Oveja%20Negra!5e0!3m2!1ses-419!2ssv!4v1778265568816!5m2!1ses-419!2ssv"
-            title="Mapa de La Oveja Negra"
-            allowfullscreen=""
+            src="https://www.google.com/maps?q=Fogo%20Bonito%20Colonia%20San%20Benito%20San%20Salvador&output=embed"
+            title="Mapa de Fogo Bonito, San Benito, San Salvador"
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
-      </div>
+      </section>
+    </main>
 
+    <footer class="site-footer">
       <div class="footer-main">
         <div class="footer-identity">
           <a class="footer-brand" href="#inicio">
-            <span class="footer-mark">
-              <img src="assets/la-oveja-negra-mark.jpg" alt="" />
-            </span>
-            <span>La Oveja Negra</span>
+            <span class="footer-mark"><img src="assets/fogo-bonito-mark.svg" alt="" /></span>
+            <span>Fogo Bonito</span>
           </a>
-          <p>Roasters & Spirits</p>
-          <span>Café · Cocina · Spirits · Experiencias</span>
+          <p>Brazilian Steakhouse</p>
+          <span>Pasión por la parrilla · Vive la experiencia</span>
         </div>
 
         <div class="footer-column">
           <p class="footer-label">Ubicación</p>
-          <p>Bulevar Del Hipódromo 209</p>
+          <p>139 Pje. 10</p>
+          <p>Colonia San Benito</p>
           <p>San Salvador</p>
-          <a href="tel:+50369850000">6985 0000</a>
         </div>
 
         <div class="footer-column">
-          <p class="footer-label">Horario general</p>
-          <p>Lun · Cerrado</p>
-          <p>Mar-Jue · 8 a.m.-11 p.m.</p>
-          <p>Vie · 8 a.m.-12 a.m.</p>
-          <p>Sáb · 10 a.m.-12 a.m.</p>
-          <p>Dom · 10 a.m.-2 p.m.</p>
+          <p class="footer-label">Horario</p>
+          <p>Lun – Mié · 11:30 a.m. – 10 p.m.</p>
+          <p>Jue – Dom · 7 a.m. – 10 p.m.</p>
         </div>
 
-        <div class="footer-column">
-          <p class="footer-label">Servicio</p>
-          <p>Almuerzo · Mar-Sáb · 12-5 p.m.</p>
-          <p>Cena · Mar-Jue · 6-11 p.m.</p>
-          <p>Cena · Vie-Sáb · 6-11:30 p.m.</p>
-          <p>Cena · Dom · 6-11 p.m.</p>
-          <p>Brunch · Sáb-Dom · 10 a.m.-2 p.m.</p>
-        </div>
-
-        <nav class="footer-column footer-links" aria-label="Redes y reservas">
-          <p class="footer-label">Reservas</p>
-          <a
-            href="https://www.opentable.com/booking/restref/availability?lang=en-US&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnx0qIKJ78jEXO8I7vvg9S433nnbsa9eFJOg1Xmo_-4jKQjL828Cz3vdrb-Z4_aem_bSRbd49Vj6pQCYfoU3K3hg&utm_id=97760_v0_s00_e0_tv3_a1dennh9cbgkje&correlationId=b969146c-99cd-441b-8f94-44315b84f63f&restRef=1423267&otSource=Instagram&otCampaign=Instagram"
-            target="_blank"
-            rel="noreferrer"
-          >
-            OpenTable
-          </a>
-          <a
-            href="https://wa.me/50369850000?text=Hola%2C%20quiero%20hacer%20una%20reserva%20en%20La%20Oveja%20Negra."
-            target="_blank"
-            rel="noreferrer"
-          >
-            WhatsApp
-          </a>
-          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
+        <nav class="footer-column footer-links" aria-label="Enlaces y redes">
+          <p class="footer-label">Encuéntranos</p>
+          <a href="https://www.instagram.com/fogobonito.sv/" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="https://fogobonito.com/MenuDigital" target="_blank" rel="noreferrer">Menú digital</a>
+          <a href="https://ig.me/m/fogobonito.sv" target="_blank" rel="noreferrer">Escríbenos</a>
         </nav>
       </div>
 
       <div class="footer-bottom">
-        <p>+15 años después de 6PM</p>
-        <p>Horarios pueden variar en feriados</p>
-        <p>La Oveja Negra · Bulevar Del Hipódromo 209</p>
+        <p>#FogoBonito · Brazilian Steakhouse</p>
+        <p>Carne 100% importada</p>
+        <p>San Benito, San Salvador</p>
       </div>
     </footer>
 
-    <a
-      class="mobile-reserve"
-      href="https://www.opentable.com/booking/restref/availability?lang=en-US&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnx0qIKJ78jEXO8I7vvg9S433nnbsa9eFJOg1Xmo_-4jKQjL828Cz3vdrb-Z4_aem_bSRbd49Vj6pQCYfoU3K3hg&utm_id=97760_v0_s00_e0_tv3_a1dennh9cbgkje&correlationId=b969146c-99cd-441b-8f94-44315b84f63f&restRef=1423267&otSource=Instagram&otCampaign=Instagram"
-      target="_blank"
-      rel="noreferrer"
-    >
+    <a class="mobile-reserve" href="https://ig.me/m/fogobonito.sv" target="_blank" rel="noreferrer">
       Reservar
     </a>
     <script src="main.js"></script>
